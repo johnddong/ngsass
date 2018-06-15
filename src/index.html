@@ -4,9 +4,21 @@
   <meta charset="utf-8">
   <title>Ng5Sass</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style type="text/css">
+    app-root:empty::after {
+      content: 'Loading…';
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      font-size: 20px;
+      transform: translate(-50%, -50%);
+    }
+  </style>
 </head>
 <body>
   <app-root></app-root>
